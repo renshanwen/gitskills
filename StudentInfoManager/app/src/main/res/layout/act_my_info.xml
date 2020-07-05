@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/MainTitleStyle"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_my_info_back"
+            android:layout_width="@dimen/button_height_small"
+            android:layout_height="@dimen/button_height_small"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:background="@drawable/ic_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="我的信息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_largest"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:focusableInTouchMode="true"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    style="@style/StuInfoType"
+                    android:text="头像"
+                    />
+
+                <ImageView
+                    android:src="@drawable/ic_logo"
+                    />
+
+            </TableRow>
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    style="@style/StuInfoType"
+                    android:text="姓名"
+                    />
+
+                <TextView
+                    style="@style/MyInfoDetail"
+                    android:text="任善文"
+                    />
+
+            </TableRow>
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    style="@style/StuInfoType"
+                    android:text="CSDN博客地址"
+                    />
+
+                <EditText
+                    style="@style/MyInfoDetail"
+                    android:text="https://blog.csdn.net/qq_41341757/category_7937239_6.html"
+                    />
+
+            </TableRow>
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    style="@style/StuInfoType"
+                    android:text="籍贯"
+                    />
+
+                <TextView
+                    style="@style/MyInfoDetail"
+                    android:text="山东"
+                    />
+
+            </TableRow>
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    style="@style/StuInfoType"
+                    android:text="学校"
+                    />
+
+                <TextView
+                    style="@style/MyInfoDetail"
+                    android:text="山东理工大学"
+                    />
+
+            </TableRow>
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    style="@style/StuInfoType"
+                    android:text="专业"
+                    />
+
+                <TextView
+                    style="@style/MyInfoDetail"
+                    android:text="计算机科学与技术"
+                    />
+
+            </TableRow>
+
+            <View
+                style="@style/WireThinHorizontal"/>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    style="@style/StuInfoType"
+                    android:text="爱好"
+                    />
+
+                <TextView
+                    style="@style/MyInfoDetail"
+                    android:text="Android 前端 linux 运维"
+                    />
+
+            </TableRow>
+
+            <View
+                style="@style/WireThinHorizontal"/>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
